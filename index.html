@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Suematsu Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <script type="text/javascript" src="allFishInfomation.js"></script>
+</head>
+
+<body>
+  <link rel="stylesheet" href="fish.css">
+  <h1 class="toptitle"> &#x1F923; 釣り情報 &#x1F923;
+    <Marquee>&#x1f41f; &#x1f41f; &#x1f41f; &#x1f41f; &#x1f41f;</Marquee>
+  </h1>
+  <h2 class="comment">検索キーワードを選択してください</h2>
+  <form method="location">
+    <div class="searchkeyword">
+      <label for="locationname">エリア</label>
+      <select id="locationname">
+      <option value="all"></option>
+      <option value="aichi">愛知</option>
+      <option value="shizuoka">静岡</option>
+      </select>
+    </div>
+  </form>
+  <form method="target">
+    <div class="searchkeyword">
+      <label for="targetfish">魚種　</label>
+      <select id="targetfish">
+      <option value="all"></option>
+      <option value="aji">アジ</option>
+      <option value="iwashi">イワシ</option>
+      <option value="tai">鯛</option>
+      <option value="ika">イカ</option>
+      </select>
+    </div>
+  </form>
+  <form method="parking">
+    <div class="searchkeyword">
+      <label for="parkingcheck">駐車場</label>
+      <select id="parkingcheck">
+      <option value="all"></option>
+      <option value="with">あり</option>
+      <option value="without">なし</option>
+      </select>
+    </div>
+  </form>
+  <input type="button" id="searchStart" value="検索"></input>
+
+
+  <h3 class="result">結果発表！！！</h3>
+  <div class="searchresult" id="resultbox">
+    <ol id="resultdisplay">検索待ってまーす</ol>
+  </div>
+  <div class="happystyle" id="happy"></div> 
+
+  <script src="fish.js"></script>
+</body>
+
+</html>
